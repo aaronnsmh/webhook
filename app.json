@@ -1,0 +1,34 @@
+{
+  "name": "iBot Group Logging",
+  "description": "With iBot Group Logging you can log all group shouts, and wall posts in a discord channel, easily.",
+  "repository": "https://github.com/aaronnsmh/webhook",
+  "logo": "https://ibot.space/assets/images/picture4-292x329.png",
+  "keywords": ["bot", "heroku", "music-playback", "discord", "javascript", "node", "youtube"],
+  "env": {
+    "group": {
+      "description": "The ID of the group you wish to log.",
+      "required": true
+    },
+    "username": {
+      "description": "Username of a roblox account, we need to login to an account in order to see the shouts and wall posts!",
+      "required": true
+    },
+    "password": {
+      "description": "Password of the roblox account.",
+      "required": true
+    },
+    "wallurl": {
+      "description": "Discord webhook url in the channel you wish to send wall logs (optional).",
+      "required": false
+    },
+    "shouturl": {
+      "description": "Discord webhook url in the channel you wish to send shout logs (optional).",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
